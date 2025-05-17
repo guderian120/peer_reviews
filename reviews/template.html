@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Review: Weather App</title>
+  <title>Review: [Project Name]</title>
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/themes.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -11,54 +11,55 @@
 </head>
 <body class="light-mode">
   <header>
-    <h1><i class="fas fa-code-review"></i> Review: Amalitech API Docs</h1>
+    <h1><i class="fas fa-code-review"></i> Review: <span id="project-title">[Project Name]</span></h1>
     <button id="theme-toggle"><i class="fas fa-moon"></i></button>
   </header>
 
   <div class="review-container">
+    <!-- Metadata Section -->
     <div class="review-meta">
       <div class="meta-card">
         <h3><i class="fas fa-star"></i> Score</h3>
-        <div class="score-badge">4/5</div>
+        <div class="score-badge" id="review-score">4.5/5</div>
       </div>
       
       <div class="meta-card">
         <h3><i class="fas fa-calendar"></i> Reviewed On</h3>
-        <div>2025-05-16</div>
+        <div id="review-date">2023-11-15</div>
       </div>
       
       <div class="meta-card">
         <h3><i class="fas fa-tags"></i> Tags</h3>
-        <div class="tags">
-          <span class="tag">#backend</span>
-          <span class="tag">#flask</span>
-          <span class="tag">#API</span>
+        <div class="tags" id="review-tags">
+          <span class="tag">#frontend</span>
+          <span class="tag">#react</span>
         </div>
       </div>
     </div>
 
+    <!-- Review Content -->
     <div class="review-content">
       <section class="review-section">
         <h2><i class="fas fa-thumbs-up"></i> Strengths</h2>
-        <ul>
-          <li>Creative categorisation SQL Scripts</li>
-          <li>Excellent use of consistent and meaninful variable names</li>
-          <li>Well-organized component structure</li>
+        <ul id="strengths">
+          <li>Clean and modular code structure</li>
+          <li>Excellent error handling</li>
         </ul>
       </section>
 
       <section class="review-section">
         <h2><i class="fas fa-lightbulb"></i> Improvements</h2>
-        <ul>
-          <li>Add detailed documentation on the process execution workflow</li>
-          <li>Your code can benefit from Object Oriented Programming Principles</li>
+        <ul id="improvements">
+          <li>Add more unit tests</li>
+          <li>Improve API documentation</li>
         </ul>
       </section>
 
       <section class="review-section">
         <h2><i class="fas fa-comment"></i> Additional Notes</h2>
-        <p>The project shows great attention to security. With some additional error handling and tests, this would be production-ready.</p>
-        <p><strong>Repository:</strong> <a href="https://github.com/felix-at-amalitech/Labs/tree/main/Programming%2C%20Ops%20and%20Database%20Exercise" target="_blank">project link</a></p>
+        <div id="notes">
+          <p>Overall a very solid implementation. The team should focus on test coverage in the next iteration.</p>
+        </div>
       </section>
     </div>
 

@@ -1,12 +1,18 @@
 .dark-mode {
   --primary: #4895ef;
   --text: #f8f9fa;
-  --bg: #212529;
-  --card-bg: #2b2d42;
-  --border: #495057;
+  --bg: #121212; /* Darker background */
+  --card-bg: #1e1e1e;
+  --border: #333;
 }
 
 .dark-mode .tag-chip:not(.active),
 .dark-mode .review-card .tag {
-  background: #495057;
+  background: #333;
+}
+
+.dark-mode #search {
+  background: #333;
+  color: white;
+  border-color: #444;
 }
