@@ -2,37 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Peer Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peer Review Hub</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/themes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-  <div class="container">
-    <h1>📝 Peer Review Dashboard</h1>
-    
-    <!-- Tag Filter Buttons -->
-    <div id="tag-filters">
-      <button class="tag-btn active" data-tag="all">All</button>
-      <button class="tag-btn" data-tag="frontend">#frontend</button>
-      <button class="tag-btn" data-tag="backend">#backend</button>
-      <!-- Add more tags as needed -->
+<body class="light-mode">
+  <header>
+    <h1><i class="fas fa-code-review"></i> Peer Review Hub</h1>
+    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+  </header>
+
+  <div class="controls">
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <i class="fas fa-search"></i>
+      <input type="text" id="search" placeholder="Search reviews...">
     </div>
 
-    <!-- Reviews Table -->
-    <table id="reviews-table">
-      <thead>
-        <tr>
-          <th>Project</th>
-          <th>Score</th>
-          <th>Tags</th>
-          <th>Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Dynamically loaded by app.js -->
-      </tbody>
-    </table>
+    <!-- Tag Filters -->
+    <div class="tag-filters">
+      <span class="tag-chip active" data-tag="all">All</span>
+      <span class="tag-chip" data-tag="frontend">#frontend</span>
+      <span class="tag-chip" data-tag="backend">#backend</span>
+      <!-- Add more tags -->
+    </div>
+  </div>
+
+  <!-- Reviews Grid -->
+  <div class="reviews-grid" id="reviews-container">
+    <!-- Dynamically loaded by app.js -->
   </div>
 
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/theme.js"></script>
 </body>
 </html>
