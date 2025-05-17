@@ -2,7 +2,7 @@
 # 🔍 Peer Review Hub
 
 [![GitHub Pages](https://img.shields.io/badge/🌐%20Live%20Demo-https://guderian120.github.io/peer_reviews/index.html-brightgreen)](https://guderian120.github.io/peer_reviews/index.html)  
-*A centralized dashboard for tracking code reviews with scores, tags, and feedback.*
+*A centralized dashboard for tracking my code reviews with scores, tags, and feedback.*
 
 ---
 
@@ -28,14 +28,6 @@
 
 ---
 
-
-
-## 🎨 UI Preview
-| Dashboard | Review Page |
-|-----------|-------------|
-| ![Dashboard](assets/media/peer_review_page.png) 
-
----
 
 ## 🌟 Why This Project?
 - **For Developers**: Track peer feedback systematically.  
