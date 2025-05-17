@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Peer Reviews</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Peer Review Dashboard</h1>
+    
+    <!-- Tag Filter Buttons -->
+    <div id="tag-filters">
+      <button class="tag-btn active" data-tag="all">All</button>
+      <button class="tag-btn" data-tag="frontend">#frontend</button>
+      <button class="tag-btn" data-tag="backend">#backend</button>
+      <!-- Add more tags as needed -->
+    </div>
+
+    <!-- Reviews Table -->
+    <table id="reviews-table">
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Score</th>
+          <th>Tags</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamically loaded by app.js -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
